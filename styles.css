@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.Ftabs{
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color:black;
+}
+
+.icon {
+    font-size: 24px; 
+    color: #3498db; 
+    margin-bottom: 5px;
+    vertical-align: middle;
+     
+
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 2px solid #2980b9;
+}
+
+button {
+    background-color:black;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+@media screen and (max-width: 767px) {
+    .tabs {
+        flex-direction: column;
+    }
+    .tab {
+        margin-bottom: 10px;
+    }
+    .product-card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .product-card {
+        width: 48%;
+    }
+}
